@@ -1187,6 +1187,12 @@ service vendor.move_time_data /system/bin/move_time_data.sh
     disabled
     oneshot
 
+on property:sys.boot_completed=1
+    setprop vendor.post_boot.parsed 1
+    # Remove settings cache, avoids derps after dirty flash
+    rm -rf /data/system/package_cache
+
+
 #service vendor.hbtp /vendor/bin/hbtp_daemon
 #     class main
 #     user system
