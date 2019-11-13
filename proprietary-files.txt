@@ -475,14 +475,6 @@ vendor/lib64/libscveObjectTracker_stub.so
 vendor/lib64/libscvePanorama.so
 vendor/lib64/libscvePanorama_lite.so
 
-# Fingerprint
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets.rc
-vendor/etc/init/init.ets.rc
-vendor/lib64/vendor.egistec.hardware.fingerprint@2.0.so
-vendor/lib64/libets_fp_et5.so
-vendor/lib64/libets_teeclient.so
-
 # FM
 lib/fm_helium.so
 lib/libfm-hci.so
@@ -1032,6 +1024,12 @@ vendor/bin/time_daemon
 
 # Wi-Fi
 vendor/bin/cnss-daemon
+vendor/etc/wifi/WCNSS_qcom_wlan_nv.bin
+vendor/etc/wifi/WCNSS_qcom_wlan_nv_Argentina.bin
+vendor/etc/wifi/WCNSS_qcom_wlan_nv_Brazil.bin
+vendor/etc/wifi/WCNSS_qcom_wlan_nv_epa.bin
+vendor/etc/wifi/WCNSS_qcom_wlan_nv_India.bin
+vendor/etc/wifi/WCNSS_wlan_dictionary.dat
 
 # Wi-Fi Display - from daisy - PKQ1.180917.001
 bin/wfdservice|edeb291221024401cbae69c2fa4e58733b7efc4c
