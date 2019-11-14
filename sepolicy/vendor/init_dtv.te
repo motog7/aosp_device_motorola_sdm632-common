@@ -1,0 +1,6 @@
+type init_dtv, domain;
+type init_dtv_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(init_dtv)
+
+allow init_dtv sysfs:file { open write };
+allow init_dtv vendor_toolbox_exec:file execute_no_trans;

@@ -18,18 +18,13 @@
 /sys/devices/soc/ca0c000\.qcom,cci/ca0c000.qcom,cci:qcom,camera@0/video4linux/video4(/.*)?     u:object_r:sysfs_graphics:s0
 /sys/devices/platform/soc/1b0c000\.qcom,cci/1b0c000\.qcom,cci:qcom,camera@0/video4linux/video1(/.*)?     u:object_r:sysfs_graphics:s0
 /persist/camera(/.*)?                                         u:object_r:persist_camera_file:s0
-/sys/devices/virtual/laser(/.*)?                              u:object_r:sysfs_sensor:s0
 /sys/devices/virtual/input/input4(/.*)?                       u:object_r:sysfs_sensor:s0
-
-/(vendor|system/vendor)/bin/init\.gbmods\.sh                    u:object_r:init-gbmods-sh_exec:s0
-/(vendor|system/vendor)/bin/mods_camd                         u:object_r:mods_exec:s0
 
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-fpcservice    u:object_r:hal_fingerprint_fpc_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service-ets   u:object_r:hal_fingerprint_fpc_exec:s0
+/(vendor|system/vendor)/bin/hw/motorola.hardware.tv@1.0-service	        u:object_r:init_dtv_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.msm8953    u:object_r:hal_light_default_exec:s0
 /(vendor|system/vendor)/bin/hw/motorola\.hardware\.audio\.adspd@1\.0-service    u:object_r:hal_audio_default_exec:s0
-/(vendor|system/vendor)/bin/init\.mmi\.(laser|usb)\.sh                          u:object_r:qti_init_shell_exec:s0
-/(vendor|system/vendor)/bin/init\.qcom\.power\.sh                               u:object_r:qti_init_shell_exec:s0
 /(vendor|system/vendor)/bin/perfd                                               u:object_r:perfd_exec:s0
 /system/bin/move_time_data\.sh                                                u:object_r:move-time-data-sh_exec:s0
 
@@ -50,8 +45,6 @@
 # Input devices
 /(vendor|system/vendor)/usr/idc(/.*)?                         u:object_r:idc_file:s0
 /(vendor|system/vendor)/usr/keylayout(/.*)?                   u:object_r:keylayout_file:s0
-
-/(vendor|system/vendor)/bin/wlan_carrier_bin\.sh            u:object_r:init_wifi_exec:s0
 
 /(vendor|system/vendor)/bin/charge_only_mode             u:object_r:charge_only_exec:s0
 
