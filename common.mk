@@ -254,7 +254,7 @@ PRODUCT_PACKAGES += \
 
 # LineageActions
 PRODUCT_PACKAGES += \
-    LineageActions
+    MotoActions
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
