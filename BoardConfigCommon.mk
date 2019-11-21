@@ -200,7 +200,7 @@ TARGET_USE_SDCLANG := true
 SDCLANG := true
 SDCLANG_PATH := ./prebuilts/clang/host/linux-x86/sdclang-6.0.2/bin
 SDCLANG_PATH_2 := ./prebuilts/clang/host/linux-x86/sdclang-6.0.2/bin
-SDCLANG_LTO_DEFS := ./device/motorola/hannah/sdllvm-lto-defs.mk
+SDCLANG_LTO_DEFS := ./device/motorola/sdm632-common/sdllvm-lto-defs.mk
 SDCLANG_COMMON_FLAGS := -O3 -fvectorize -Wno-user-defined-warnings -Wno-vectorizer-no-neon -Wno-unknown-warning-option -Wno-deprecated-register -Wno-tautological-type-limit-compare -Wno-sign-compare -Wno-gnu-folding-constant -mllvm -arm-implicit-it=always -Wno-inline-asm -Wno-unused-command-line-argument -Wno-unused-variable
 
 # Lights
