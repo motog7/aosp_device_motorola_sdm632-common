@@ -61,7 +61,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Color Mode
 PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.display.enable_default_color_mode=1
+    vendor.display.enable_default_color_mode=0
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -181,6 +181,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Time daemon
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.timed.enable=true
+
+# UI
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.use_fifo_ui=1
 
 # Voice assistant
 PRODUCT_PROPERTY_OVERRIDES += \
