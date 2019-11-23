@@ -61,7 +61,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Color Mode
 PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.display.enable_default_color_mode=0
+    vendor.display.enable_default_color_mode=1
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
